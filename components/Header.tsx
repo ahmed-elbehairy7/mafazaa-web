@@ -13,7 +13,6 @@ function Header({
   show?: boolean;
 }) {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
   
 
   useEffect(() => {
@@ -42,34 +41,6 @@ function Header({
           </li>
         ))}
       </ul>
-      <button
-        className="block md:hidden text-bright-one focus:outline-none relative z-20"
-        onClick={() => setIsMenuOpen(!isMenuOpen)}
-      >
-        <svg
-          className="w-6 h-6"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          {isMenuOpen ? (
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M6 18L18 6M6 6l12 12"
-            />
-          ) : (
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M4 6h16M4 12h16M4 18h16"
-            />
-          )}
-        </svg>
-      </button>
       <Link href="/" className="col-span-3">
         <Image
           src={logo}
@@ -93,21 +64,6 @@ function Header({
           </li>
         ))}
       </ul>
-
-      {isMenuOpen && (
-        <ul className="md:hidden bg-gradient-to-r from-dark-one to-dark-two px-6 py-4 z-10 fixed left-0 top-0 w-full h-screen flex flex-col-reverse items-center justify-center">
-          {links?.importantLinks?.map((link: any, index: any) => (
-            <li key={index} className="py-2">
-              <Link
-                href={link.href}
-                className="text-bright-one font-bold hover:text-gray-200"
-              >
-                {link.text}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      )}
     </header>
   );
 }

@@ -20,17 +20,7 @@ export const headerConfig: HeaderConfig = {
 			text: "GitHub",
 		},
 	],
-	importantLinks: [
-
-		{
-			href: "/support_us",
-			text: "ادعمنا",
-		},
-		{
-			href: "/manhaj",
-			text: "منهج مقترح"
-		}
-	],
+	importantLinks: [],
 };
 
 export const footerConfig: FooterConfig = {
@@ -47,18 +37,7 @@ export const footerConfig: FooterConfig = {
 			text: "GitHub",
 		},
 	],
-	importantLinks: [
-
-		{
-			href: "/support_us",
-			text: "ادعمنا",
-		},
-		{
-			href: "/manhaj",
-			text: "منهج مقترح"
-		}
-
-	],
+	importantLinks: [],
 	supportEmail: "support@mafazaa.com",
 };
 

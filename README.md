@@ -100,8 +100,8 @@ mafazaa-web/
 │   │   └── page.tsx          # Details page (independent data)
 │   ├── join/
 │   │   └── page.tsx          # Join page (independent)
-│   ├── support_us/
-│   │   └── page.tsx          # Support us page (independent)
+│   ├── _support_us/
+│   │   └── page.tsx          # Support us page (kept but excluded from routes)
 │   ├── privacy-policy/
 │   │   └── page.tsx          # Privacy policy (independent)
 │   └── terms-of-use/

@@ -2,6 +2,7 @@
 
 import HeroSection from "@/components/HeroSection";
 import type { HeroSectionProps } from "@/types/index";
+import AppDownloadSection from "@/components/AppDownloadSection";
 import "./globals.css";
 
 export default function Home() {
@@ -53,7 +54,7 @@ export default function Home() {
 						<div className="text-center space-y-2 mb-8">
 							<h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight leading-tight text-bright-one">
 								المنهج |{" "}
-								<span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-color via-accent-color to-secondary-color">
+								<span className="text-accent-color">
 									الشروحات المرئية
 								</span>
 							</h2>
@@ -95,6 +96,9 @@ export default function Home() {
 						</div>
 					</div>
 				</section>
+
+				{/* App Download Section */}
+				<AppDownloadSection />
 			</main>
 		</>
 	);

@@ -1,5 +1,6 @@
 import githubIcon from "@/assets/github.svg";
 import youtubeIcon from "@/assets/youtube.svg";
+import whatsappIcon from "@/assets/whatsapp.svg"
 import type {
 	HeaderConfig,
 	FooterConfig,
@@ -19,6 +20,11 @@ export const headerConfig: HeaderConfig = {
 			src: githubIcon,
 			text: "GitHub",
 		},
+		{
+			href: "https://whatsapp.com/channel/0029Vb5NRuqLY6dCU3qeXO2i",
+			src: whatsappIcon,
+			text: "Whatsapp channel"
+		}
 	],
 	importantLinks: [],
 };
@@ -36,6 +42,11 @@ export const footerConfig: FooterConfig = {
 			src: githubIcon,
 			text: "GitHub",
 		},
+		{
+			href: "https://whatsapp.com/channel/0029Vb5NRuqLY6dCU3qeXO2i",
+			src: whatsappIcon,
+			text: "Whatsapp channel"
+		}
 	],
 	importantLinks: [],
 	supportEmail: "support@mafazaa.com",

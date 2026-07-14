@@ -3,6 +3,7 @@
 import HeroSection from "@/components/HeroSection";
 import type { HeroSectionProps } from "@/types/index";
 import AppDownloadSection from "@/components/AppDownloadSection";
+import WhatsAppChannelSection from "@/components/WhatsAppChannelSection";
 import "./globals.css";
 
 export default function Home() {
@@ -42,6 +43,12 @@ export default function Home() {
 			/>
 			<main dir="rtl" className="min-h-screen bg-dark-one pb-16">
 				<HeroSection {...heroData} />
+
+				{/* App Download Section */}
+				<AppDownloadSection />
+
+				{/* WhatsApp Channel Section */}
+				<WhatsAppChannelSection />
 
 				{/* Video Lectures Section */}
 				<section className="relative py-12 px-4 flex flex-col items-center justify-center overflow-hidden">
@@ -96,9 +103,6 @@ export default function Home() {
 						</div>
 					</div>
 				</section>
-
-				{/* App Download Section */}
-				<AppDownloadSection />
 			</main>
 		</>
 	);

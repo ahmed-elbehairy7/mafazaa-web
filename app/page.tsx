@@ -48,11 +48,11 @@ export default function Home() {
 				<AppDownloadSection />
 
 				{/* WhatsApp Channel Section */}
-				<WhatsAppChannelSection />
+				{/* <WhatsAppChannelSection /> */}
 
 				{/* Video Lectures Section */}
-				<section className="relative py-12 px-4 flex flex-col items-center justify-center overflow-hidden">
-					{/* Subtle background halo */}
+				{/* <section className="relative py-12 px-4 flex flex-col items-center justify-center overflow-hidden">
+
 					<div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
 						<div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(13,48,158,0.20),_transparent_55%),_radial-gradient(circle_at_bottom,_rgba(96,20,140,0.18),_transparent_55%)]" />
 					</div>
@@ -69,7 +69,6 @@ export default function Home() {
 						</div>
 
 						<div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-							{/* Card 1: أولى خطوات الاستقامة */}
 							<div className="group relative rounded-2xl border border-white/10 bg-white/5 p-4 shadow-xl backdrop-blur-xl hover:bg-white/10 transition-all duration-300">
 								<h3 className="text-base font-semibold mb-3 text-right text-bright-one group-hover:text-accent-color transition-colors">
 									أولى خطوات الاستقامة
@@ -85,7 +84,6 @@ export default function Home() {
 								</div>
 							</div>
 
-							{/* Card 2: الهدف والمنهج */}
 							<div className="group relative rounded-2xl border border-white/10 bg-white/5 p-4 shadow-xl backdrop-blur-xl hover:bg-white/10 transition-all duration-300">
 								<h3 className="text-base font-semibold mb-3 text-right text-bright-one group-hover:text-accent-color transition-colors">
 									الهدف والمنهج
@@ -102,7 +100,7 @@ export default function Home() {
 							</div>
 						</div>
 					</div>
-				</section>
+				</section> */}
 			</main>
 		</>
 	);
